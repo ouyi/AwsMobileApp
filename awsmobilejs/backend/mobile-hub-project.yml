@@ -19,15 +19,27 @@ features:
             hashKeyType: S
             rangeKeyName: personId
             rangeKeyType: S
+            tableName: ___DYNAMIC_PREFIX___-AWSMobileTable
+            tablePrivacy: public
             indexes:
               - !com.amazonaws.mobilehub.v0.NoSQLIndex 
                 hashKeyName: teamId
                 hashKeyType: S
-                indexName: personName-index
                 rangeKeyName: personName
                 rangeKeyType: S
-            tableName: ___DYNAMIC_PREFIX___-AWSMobileTable
+                indexName: personName-index
+          - !com.amazonaws.mobilehub.v0.NoSQLTable 
+            attributes:
+              category: S
+              description: S
+              created: N
+            hashKeyName: userId
+            hashKeyType: S
+            rangeKeyName: taskId
+            rangeKeyType: S
+            tableName: ___DYNAMIC_PREFIX___-tasks
             tablePrivacy: public
+            indexes: []
   mobile-analytics: !com.amazonaws.mobilehub.v0.Pinpoint 
     components:
       analytics: !com.amazonaws.mobilehub.v0.PinpointAnalytics {}
