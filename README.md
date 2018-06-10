@@ -149,3 +149,13 @@ Since your Ionic app is just a web app, it can be hosted as a static website in 
 npm run build
 awsmobile publish
 ```
+
+## My steps
+
+```
+ionic start AwsMobileApp aws --no-git
+? Would you like to integrate your new app with Cordova to target native iOS and Android
+? No
+
+? Install the free Ionic Pro SDK and connect your app? No
+```
